@@ -15,7 +15,7 @@ public class Recommend {
         cf.setClses();
         this.clses = cf.getClses();
     }
-
+    //参数userPerfer为用户的喜爱偏好，返回值为长度为10的数组，内容是图像的索引。
     public int[] recommeded(double[] userPerfer){
         int[] res = new int[10];
         int count =0;
@@ -80,16 +80,16 @@ public class Recommend {
         return res;
     }
 
-    public static void main(String[] args){
-    	double[] test_array = {0.12,0.34,0.29,0.07,0.08,0.05,0.05,0,0};
-        Recommend re = new Recommend();
-        double[] res = re.formatArray(test_array);
-        double sum = 0.0;
-        for(int i=0;i<res.length;++i){
-            sum+=res[i];
-            System.out.print(res[i]+" ");
-        }
-        System.out.println("sum:"+sum);
-    }
+//    public static void main(String[] args){
+//    	double[] test_array = {0.12,0.34,0.29,0.07,0.08,0.05,0.05,0,0};
+//        Recommend re = new Recommend();
+//        double[] res = re.formatArray(test_array);
+//        double sum = 0.0;
+//        for(int i=0;i<res.length;++i){
+//            sum+=res[i];
+//            System.out.print(res[i]+" ");
+//        }
+//        System.out.println("sum:"+sum);
+//    }
 
 }
